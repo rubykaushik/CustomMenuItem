@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		807E16641E13A4CA004A4121 /* UtilityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807E16631E13A4CA004A4121 /* UtilityClass.swift */; };
 		80DD9F1C1DD42DF600EE4804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DD9F1B1DD42DF600EE4804 /* AppDelegate.swift */; };
 		80DD9F1E1DD42DF600EE4804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DD9F1D1DD42DF600EE4804 /* ViewController.swift */; };
 		80DD9F201DD42DF600EE4804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DD9F1F1DD42DF600EE4804 /* Assets.xcassets */; };
-		80DD9F231DD42DF600EE4804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DD9F211DD42DF600EE4804 /* Main.storyboard */; };
+		80DD9F2B1DD42E8D00EE4804 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DD9F2A1DD42E8D00EE4804 /* CustomView.swift */; };
+		80DD9F2D1DD42E9500EE4804 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DD9F2C1DD42E9500EE4804 /* CustomView.xib */; };
+		80DD9F351DD4562200EE4804 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DD9F341DD4562200EE4804 /* MainMenu.xib */; };
+		80DD9F371DD4566200EE4804 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DD9F361DD4566200EE4804 /* StatusMenuController.swift */; };
+		80DD9F3A1DD479F400EE4804 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DD9F391DD479F400EE4804 /* AppKit.framework */; };
+		80DD9F431DD4882100EE4804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DD9F411DD4882100EE4804 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		807E16631E13A4CA004A4121 /* UtilityClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityClass.swift; sourceTree = "<group>"; };
 		80DD9F181DD42DF600EE4804 /* VisualEffectView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualEffectView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DD9F1B1DD42DF600EE4804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80DD9F1D1DD42DF600EE4804 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80DD9F1F1DD42DF600EE4804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		80DD9F221DD42DF600EE4804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80DD9F241DD42DF600EE4804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80DD9F2A1DD42E8D00EE4804 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		80DD9F2C1DD42E9500EE4804 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		80DD9F341DD4562200EE4804 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		80DD9F361DD4566200EE4804 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		80DD9F391DD479F400EE4804 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		80DD9F421DD4882100EE4804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80DD9F3A1DD479F400EE4804 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +51,7 @@
 			children = (
 				80DD9F1A1DD42DF600EE4804 /* VisualEffectView */,
 				80DD9F191DD42DF600EE4804 /* Products */,
+				80DD9F381DD479F400EE4804 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,10 +69,23 @@
 				80DD9F1B1DD42DF600EE4804 /* AppDelegate.swift */,
 				80DD9F1D1DD42DF600EE4804 /* ViewController.swift */,
 				80DD9F1F1DD42DF600EE4804 /* Assets.xcassets */,
-				80DD9F211DD42DF600EE4804 /* Main.storyboard */,
 				80DD9F241DD42DF600EE4804 /* Info.plist */,
+				80DD9F411DD4882100EE4804 /* Main.storyboard */,
+				80DD9F2A1DD42E8D00EE4804 /* CustomView.swift */,
+				80DD9F2C1DD42E9500EE4804 /* CustomView.xib */,
+				80DD9F341DD4562200EE4804 /* MainMenu.xib */,
+				80DD9F361DD4566200EE4804 /* StatusMenuController.swift */,
+				807E16631E13A4CA004A4121 /* UtilityClass.swift */,
 			);
 			path = VisualEffectView;
+			sourceTree = "<group>";
+		};
+		80DD9F381DD479F400EE4804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80DD9F391DD479F400EE4804 /* AppKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80DD9F201DD42DF600EE4804 /* Assets.xcassets in Resources */,
-				80DD9F231DD42DF600EE4804 /* Main.storyboard in Resources */,
+				80DD9F351DD4562200EE4804 /* MainMenu.xib in Resources */,
+				80DD9F431DD4882100EE4804 /* Main.storyboard in Resources */,
+				80DD9F2D1DD42E9500EE4804 /* CustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,18 +161,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80DD9F371DD4566200EE4804 /* StatusMenuController.swift in Sources */,
+				80DD9F2B1DD42E8D00EE4804 /* CustomView.swift in Sources */,
 				80DD9F1E1DD42DF600EE4804 /* ViewController.swift in Sources */,
 				80DD9F1C1DD42DF600EE4804 /* AppDelegate.swift in Sources */,
+				807E16641E13A4CA004A4121 /* UtilityClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		80DD9F211DD42DF600EE4804 /* Main.storyboard */ = {
+		80DD9F411DD4882100EE4804 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				80DD9F221DD42DF600EE4804 /* Base */,
+				80DD9F421DD4882100EE4804 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -248,6 +280,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VisualEffectView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = Myorg.VisualEffectView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -261,6 +294,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VisualEffectView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = Myorg.VisualEffectView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -286,6 +320,7 @@
 				80DD9F291DD42DF600EE4804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
