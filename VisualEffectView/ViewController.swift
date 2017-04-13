@@ -13,13 +13,6 @@ class ViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-//   let customView = CustomView(frame: NSRect(x: 0, y: 0, width: 200, height: 200))
-//   self.view.addSubview(customView)
-    
-//    let customView = CustomVisualEffectView(frame: NSRect(x: 0, y: 0, width: 200, height: 200))
-//    self.view.addSubview(customView)
-    
-  
 
     // Do any additional setup after loading the view.
   }

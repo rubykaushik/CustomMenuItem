@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
@@ -27,13 +27,22 @@
                 <menuItem title="Sub Menu" id="mZV-hn-rju">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
+                <menuItem title="Quit" id="fhv-SL-Xqw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="0hs-NL-e2w" id="p4j-4L-VBs"/>
+                    </connections>
+                </menuItem>
             </items>
             <connections>
                 <outlet property="delegate" destination="0hs-NL-e2w" id="Roq-Wv-7Pk"/>
             </connections>
-            <point key="canvasLocation" x="96.5" y="301.5"/>
+            <point key="canvasLocation" x="96" y="311.5"/>
         </menu>
         <menu id="rOS-uI-9M8">
+            <connections>
+                <outlet property="delegate" destination="0hs-NL-e2w" id="Q6D-V5-v1R"/>
+            </connections>
             <point key="canvasLocation" x="137" y="422"/>
         </menu>
     </objects>

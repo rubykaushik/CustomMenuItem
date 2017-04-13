@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CustomView" customModule="VisualEffectView" customModuleProvider="target">
             <connections>
                 <outlet property="lbl" destination="aXK-eD-yBZ" id="Roj-B7-5hJ"/>
+                <outlet property="startStopButton" destination="HlD-aJ-iyY" id="pXu-oC-NIi"/>
                 <outlet property="view" destination="5oD-p5-ZRa" id="2Zd-Ou-KLF"/>
             </connections>
         </customObject>
-        <customView autoresizesSubviews="NO" id="5oD-p5-ZRa">
+        <customView id="5oD-p5-ZRa">
             <rect key="frame" x="0.0" y="0.0" width="200" height="36"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
@@ -20,15 +21,32 @@
                     <rect key="frame" x="18" y="9" width="164" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="bNB-Ob-HUh">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" tag="307" translatesAutoresizingMaskIntoConstraints="NO" id="HlD-aJ-iyY" customClass="CustomButton" customModule="VisualEffectView" customModuleProvider="target">
+                    <rect key="frame" x="153" y="2" width="39" height="32"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="play" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="E5i-wT-Za3">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="startStopClickedWithButton:" target="-2" id="d8W-Jp-DAi"/>
+                    </connections>
+                </button>
             </subviews>
+            <constraints>
+                <constraint firstItem="HlD-aJ-iyY" firstAttribute="centerY" secondItem="5oD-p5-ZRa" secondAttribute="centerY" id="YOU-fY-b5D"/>
+                <constraint firstAttribute="trailing" secondItem="HlD-aJ-iyY" secondAttribute="trailing" constant="8" id="clp-DB-vGr"/>
+            </constraints>
             <point key="canvasLocation" x="-36" y="122"/>
         </customView>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
     </objects>
+    <resources>
+        <image name="play" width="39" height="40"/>
+    </resources>
 </document>

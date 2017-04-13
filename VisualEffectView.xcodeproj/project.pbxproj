@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8040CBF91E5EE8BD00562C8A /* MenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8040CBF81E5EE8BD00562C8A /* MenuItemModel.swift */; };
+		8040CBFB1E5EEC2300562C8A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8040CBFA1E5EEC2300562C8A /* CustomButton.swift */; };
 		807E16641E13A4CA004A4121 /* UtilityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807E16631E13A4CA004A4121 /* UtilityClass.swift */; };
 		80DD9F1C1DD42DF600EE4804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DD9F1B1DD42DF600EE4804 /* AppDelegate.swift */; };
 		80DD9F1E1DD42DF600EE4804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DD9F1D1DD42DF600EE4804 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8040CBF81E5EE8BD00562C8A /* MenuItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemModel.swift; sourceTree = "<group>"; };
+		8040CBFA1E5EEC2300562C8A /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		807E16631E13A4CA004A4121 /* UtilityClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityClass.swift; sourceTree = "<group>"; };
 		80DD9F181DD42DF600EE4804 /* VisualEffectView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualEffectView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DD9F1B1DD42DF600EE4804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				80DD9F341DD4562200EE4804 /* MainMenu.xib */,
 				80DD9F361DD4566200EE4804 /* StatusMenuController.swift */,
 				807E16631E13A4CA004A4121 /* UtilityClass.swift */,
+				8040CBF81E5EE8BD00562C8A /* MenuItemModel.swift */,
+				8040CBFA1E5EEC2300562C8A /* CustomButton.swift */,
 			);
 			path = VisualEffectView;
 			sourceTree = "<group>";
@@ -115,7 +121,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Ruby Kaushik";
 				TargetAttributes = {
 					80DD9F171DD42DF600EE4804 = {
@@ -165,7 +171,9 @@
 				80DD9F2B1DD42E8D00EE4804 /* CustomView.swift in Sources */,
 				80DD9F1E1DD42DF600EE4804 /* ViewController.swift in Sources */,
 				80DD9F1C1DD42DF600EE4804 /* AppDelegate.swift in Sources */,
+				8040CBFB1E5EEC2300562C8A /* CustomButton.swift in Sources */,
 				807E16641E13A4CA004A4121 /* UtilityClass.swift in Sources */,
+				8040CBF91E5EE8BD00562C8A /* MenuItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +209,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -250,6 +259,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

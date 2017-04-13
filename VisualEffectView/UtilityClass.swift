@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import AppKit
 
 class UtilityClass: NSObject {
   
@@ -14,22 +15,43 @@ class UtilityClass: NSObject {
    static let sharedInstance = UtilityClass()
   
   
+  /* Returns static instance of visualEffectView for highlighting the custom menuItem view */
   class func visualEffectViewInstance(frame : NSRect) -> NSVisualEffectView {
     if visualEffectView == nil {
       visualEffectView = NSVisualEffectView(frame: frame)
       visualEffectView!.blendingMode = .behindWindow
-      visualEffectView!.isEmphasized = true
+      UtilityClass.updateVisualEffectViewProperty()
       visualEffectView!.material = .selection
       visualEffectView!.state = .active
     }
     return visualEffectView!
   }
   
-  class func updateVisualEffectView(frame : NSRect) {
-    if self.visualEffectView != nil {
+  class func releaseVisualEffectView() {
+    visualEffectView = nil
+  }
+  
+  /* If visualEffectView is nil then creates the instance of  visualEffectView otherwise update its property
+   */
+  class func updateEmphasizedPropertyOfVisualEffectViewWhileChangingInterfaceStyle(frame : NSRect) {
+    if self.visualEffectView == nil {
+      self.visualEffectView = self.visualEffectViewInstance(frame: frame)
+    }
+    else {
+      UtilityClass.updateVisualEffectViewProperty()
+    }
+  }
+  
+  private class func updateVisualEffectViewProperty() {
+    if NSWorkspace.shared().accessibilityDisplayShouldReduceTransparency {
+      visualEffectView!.isEmphasized = true
+    }
+    else {
       if #available(OSX 10.12, *) {
         if UtilityClass.sharedInstance.isSystemInDarkMode() && NSColor.currentControlTint == NSControlTint.graphiteControlTint {
-          visualEffectView!.isEmphasized = false
+          visualEffectView!.isEmphasized =   false
+//          visualEffectView?.wantsLayer = true
+//          visualEffectView?.layer?.backgroundColor = NSColor.white.cgColor
         }
         else {
           visualEffectView!.isEmphasized = true
@@ -37,7 +59,6 @@ class UtilityClass: NSObject {
       }
     }
   }
-  
   
   func isSystemInDarkMode() -> Bool {
     if let modeName = UserDefaults.standard.string(forKey: "AppleInterfaceStyle") {
